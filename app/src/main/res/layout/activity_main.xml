@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="end"
+        android:layout_weight="3">
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text=""
+            android:layout_gravity="center"
+            android:textSize="30sp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="7">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+
+            <Button
+                android:id="@+id/buPercent"
+                android:onClick="percentEvent"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="@color/teal_200"
+                android:text="%"/>
+
+            <Button
+                android:onClick="sqrtEvent"
+                android:id="@+id/buSqrt"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="@color/teal_200"
+
+                android:text="√"/>
+
+            <Button
+                android:id="@+id/plusMinus"
+                android:onClick="numberEvent"
+                android:layout_width="0dp"
+                android:backgroundTint="@color/teal_200"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="+/-"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/bu7"
+                android:onClick="numberEvent"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="@color/teal_700"
+                android:text="7"/>
+
+            <Button
+                android:id="@+id/bu8"
+                android:onClick="numberEvent"
+                android:layout_width="0dp"
+                android:backgroundTint="@color/teal_700"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="8"/>
+
+            <Button
+                android:id="@+id/bu9"
+                android:onClick="numberEvent"
+                android:layout_width="0dp"
+                android:backgroundTint="@color/teal_700"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="9"/>
+
+            <Button
+                android:id="@+id/buMultiply"
+                android:onClick="operatorEvent"
+                android:layout_width="0dp"
+                android:backgroundTint="@color/purple_500"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="*"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/bu4"
+                android:onClick="numberEvent"
+                android:layout_width="0dp"
+                android:backgroundTint="@color/teal_700"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="4"/>
+
+            <Button
+                android:id="@+id/bu5"
+                android:onClick="numberEvent"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:backgroundTint="@color/teal_700"
+                android:layout_weight="1"
+                android:text="5"/>
+
+            <Button
+                android:id="@+id/bu6"
+                android:onClick="numberEvent"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:backgroundTint="@color/teal_700"
+                android:layout_weight="1"
+                android:text="6"/>
+
+            <Button
+                android:id="@+id/buMinus"
+                android:onClick="operatorEvent"
+                android:layout_width="0dp"
+                android:backgroundTint="@color/purple_200"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="-"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/bu1"
+                android:onClick="numberEvent"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:backgroundTint="@color/teal_700"
+                android:layout_weight="1"
+                android:text="1"/>
+
+            <Button
+                android:id="@+id/bu2"
+                android:onClick="numberEvent"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="@color/teal_700"
+                android:text="2"/>
+
+            <Button
+                android:id="@+id/bu3"
+                android:onClick="numberEvent"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:backgroundTint="@color/teal_700"
+                android:layout_weight="1"
+                android:text="3"/>
+
+            <Button
+                android:id="@+id/buPlus"
+                android:layout_width="0dp"
+                android:onClick="operatorEvent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="+"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/buC"
+                android:onClick="cEvent"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="C"/>
+
+            <Button
+                android:id="@+id/bu0"
+                android:onClick="numberEvent"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="@color/teal_700"
+                android:text="0"/>
+
+            <Button
+                android:id="@+id/buDot"
+                android:onClick="numberEvent"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="."/>
+
+            <Button
+                android:id="@+id/byDivide"
+                android:onClick="operatorEvent"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="@color/purple_200"
+                android:text="/"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <Button
+                android:id="@+id/buEqual"
+                android:onClick="equalEvent"
+                android:layout_width="0dp"
+                android:backgroundTint="@color/teal_200"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="="/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
